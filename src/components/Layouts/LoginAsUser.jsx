@@ -42,14 +42,6 @@ export default function Login() {
               <Input type="password" />
             </FormControl>
             <Stack spacing={10}>
-              <Stack
-                direction={{ base: "column", sm: "row" }}
-                align={"start"}
-                justify={"space-between"}
-              >
-                <Checkbox>Remember me</Checkbox>
-                <Link color={"blue.400"}>Forgot password?</Link>
-              </Stack>
               <Button
                 bg={"blue.400"}
                 color={"white"}
@@ -62,9 +54,9 @@ export default function Login() {
             </Stack>
             <Box align={"center"}>
               New User singup Here?{" "}
-              <NavLink to="/userSignup">
-                <Link color="teal.500">Sign Up</Link>
-              </NavLink>
+              <Link to="/userSignup" color="teal.500">
+                Sign Up
+              </Link>
             </Box>
           </Stack>
         </Box>

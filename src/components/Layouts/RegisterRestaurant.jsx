@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   Flex,
   Box,
@@ -12,7 +13,6 @@ import {
   Heading,
   Text,
   useColorModeValue,
-  Link,
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
@@ -76,23 +76,20 @@ export default function SignUpRestaurant() {
             </FormControl>
             <Stack spacing={10} pt={2}>
               <Button
-                loadingText="Submitting"
-                size="lg"
-                bg={"blue.400"}
-                color={"white"}
-                _hover={{
-                  bg: "blue.500",
-                }}
+                as={Link}
+                to="/RestaurantHome"
+                variant="outline"
+                _hover={{ bg: "teal.700", borderColor: "teal.700" }}
               >
-                Sign up
+                Sign Up
               </Button>
             </Stack>
             <Stack pt={6}>
               <Text align={"center"}>
                 Already a user?
-                <NavLink to="/restaurantLogin">
-                  <Link color={"blue.400"}>Login</Link>
-                </NavLink>
+                <Link to="/restaurantLogin" color={"blue.400"}>
+                  Login
+                </Link>
               </Text>
             </Stack>
           </Stack>

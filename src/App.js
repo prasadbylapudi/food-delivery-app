@@ -1,4 +1,3 @@
-import './App.css'
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,11 +11,19 @@ import LoginRestaurant from './components/Layouts/LoginAsRestaurant'
 import SignupUser from './components/Layouts/RegisterUser'
 import SignUpRestaurant from './components/Layouts/RegisterRestaurant'
 import Login from './components/Layouts/LoginAsUser'
+import Recipes from './components/Meals/Recipes'
+import UserHome from './Pages/UserHome'
+import UserHome2 from './Pages/UserHome2'
+
+
+import { UserContext } from './store/UserContext'
 function App() {
   return (
     <>
       {/* <Restaurant /> */}
       {/* <Login /> */}
+      {/* <Recipes /> */}
+      <br></br>
       <Router>
         <Routes>
           <Route exact path="/" element={<Header />} />
@@ -25,6 +32,8 @@ function App() {
           <Route path="/restaurantLogin" element={<LoginRestaurant />} />
           <Route path="/restaurantSignup" element={<SignUpRestaurant />} />
           <Route path="/RestaurantHome" element={<Restaurant />} />
+          <Route path="/UserHome" element={<UserHome />} />
+          <Route path="/UserHome/:restaurauntId" element={<UserHome2 />} />
         </Routes>
       </Router>
     </>

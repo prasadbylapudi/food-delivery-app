@@ -54,32 +54,34 @@ const Header = (props) => {
           spacing={6}
         >
           <Button
+            as={Link}
+            to="/userSignup"
             variant="outline"
             _hover={{ bg: "teal.700", borderColor: "teal.700" }}
           >
             user Registration
           </Button>
 
-          <Box>
-            New User singup Here?{" "}
-            <NavLink to="/userSignup">
-              <Link color="red.500">Sign Up</Link>
-            </NavLink>
-          </Box>
-
           <Button
+            as={Link}
+            to="/userLogin"
             variant="outline"
             _hover={{ bg: "teal.700", borderColor: "teal.700" }}
           >
             user Login
           </Button>
           <Button
+            as={Link}
+            to="/restaurantSignup"
             variant="outline"
             _hover={{ bg: "teal.700", borderColor: "teal.700" }}
           >
-            Restaurant Signup
+            restaurant Registration
           </Button>
+
           <Button
+            as={Link}
+            to="/restaurantLogin"
             variant="outline"
             _hover={{ bg: "teal.700", borderColor: "teal.700" }}
           >

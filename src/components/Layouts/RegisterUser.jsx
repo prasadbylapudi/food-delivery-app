@@ -138,9 +138,9 @@ export default function SignupUser() {
             <Stack pt={6}>
               <Text align={"center"}>
                 Already a user?
-                <NavLink to="/userLogin">
-                  <Link color="teal.500">Login</Link>
-                </NavLink>
+                <Link to="/userLogin" color="teal.500">
+                  Login
+                </Link>
               </Text>
             </Stack>
           </Stack>

@@ -1,0 +1,36 @@
+/* .recipeCard{
+    display: flex;
+    flex-direction: row;
+    margin:50px;
+    text-align: center;
+    align-items: center;
+
+} */
+/* 
+.heading{
+    font-size:80px;
+    text-align: center;
+}
+.recipeCard div{
+    display: grid;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-right:10px;
+    grid-template-columns:1fr 1fr 1fr;
+    border: 3px solid black;
+    background-color: aliceblue;
+}
+span{
+    color: blue;
+    border: none;
+    margin-left:500px;
+}
+.cart{
+    width:100px;
+    height:80px;
+    background-color: gainsboro;
+    color:black;
+    margin-left:100px;
+    align-items: center;
+    
+} */

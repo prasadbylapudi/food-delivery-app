@@ -1,3 +1,5 @@
+import { Link, NavLink } from "react-router-dom";
+
 import {
   Flex,
   Box,
@@ -6,13 +8,11 @@ import {
   Input,
   Checkbox,
   Stack,
-  Link,
   Button,
   Heading,
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { NavLink } from "react-router-dom";
 export default function LoginRestaurant() {
   return (
     <Flex
@@ -41,29 +41,20 @@ export default function LoginRestaurant() {
               <Input type="password" />
             </FormControl>
             <Stack spacing={10}>
-              <Stack
-                direction={{ base: "column", sm: "row" }}
-                align={"start"}
-                justify={"space-between"}
-              >
-                <Checkbox>Remember me</Checkbox>
-                <Link color={"blue.400"}>Forgot password?</Link>
-              </Stack>
               <Button
-                bg={"blue.400"}
-                color={"white"}
-                _hover={{
-                  bg: "blue.500",
-                }}
+                as={Link}
+                to="/RestaurantHome"
+                variant="outline"
+                _hover={{ bg: "teal.700", borderColor: "teal.700" }}
               >
-                Sign in
+                SignIn
               </Button>
             </Stack>
             <Box align={"center"}>
               New restaurant singup Here?{" "}
-              <NavLink to="/restaurantSignup">
-                <Link color="teal.500">Sign Up</Link>
-              </NavLink>
+              <Link to="/restaurantSignup" color="teal.500">
+                Sign Up
+              </Link>
             </Box>
           </Stack>
         </Box>
